@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-geist-sans), sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+input, select, textarea {
+  @apply w-full px-3 py-2 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white;
+}
+
+button {
+  @apply cursor-pointer rounded-lg px-4 py-2 text-sm font-medium transition-colors;
+}
